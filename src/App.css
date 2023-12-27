@@ -1,0 +1,28 @@
+/* Resetting the css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Styling for the main app container */
+.app-container {
+    text-align: center;
+}
+
+/* Styling for the app title */
+.app-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    color: #56b4d3;
+}

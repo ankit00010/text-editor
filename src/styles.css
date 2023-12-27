@@ -1,0 +1,54 @@
+.text-editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-editor-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.text-editor-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-editor-button:hover {
+    background-color: #45a049;
+}
+
+.text-editor-canvas {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.text-editor-property-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .text-editor-container {
+        flex-direction: row;
+    }
+
+    .text-editor-property-controls {
+        flex-grow: 1;
+    }
+
+    .text-editor-canvas {
+        flex-grow: 2;
+        margin-left: 16px;
+    }
+}

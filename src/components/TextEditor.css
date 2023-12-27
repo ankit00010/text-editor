@@ -1,0 +1,91 @@
+/* Container for the text editor */
+.text-editor-container {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Container for the text editor canvas */
+.text-editor-canvas-container {
+    border-radius: 4px;
+    flex-grow: 2;
+    overflow: hidden;
+}
+
+/* Styling for the text editor canvas */
+.text-editor-canvas {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ddd;
+}
+
+/* Styling for the property controls section */
+.text-editor-property-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+/* Styling for the input field */
+.text-editor-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the editor button */
+.text-editor-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+}
+
+/* Button hover effect */
+.text-editor-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the text display */
+.text-editor-text-display {
+    margin-top: 16px;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+/* Responsive layout for screens up to 767px width */
+@media screen and (max-width: 767px) {
+    .text-editor-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .text-editor-canvas-container {
+        flex-grow: 1;
+    }
+
+    .text-editor-canvas {
+        border: 1px solid #ddd;
+        height: 150px;
+    }
+
+    .text-editor-property-controls {
+        width: 100%;
+    }
+}
